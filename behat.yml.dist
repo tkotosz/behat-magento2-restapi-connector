@@ -1,0 +1,6 @@
+default:
+  extensions:
+    Bex\Behat\Magento2RestapiConnectorExtension:
+      api_url: yourbaseurl
+      api_user: apiuser
+      api_password: apipass
