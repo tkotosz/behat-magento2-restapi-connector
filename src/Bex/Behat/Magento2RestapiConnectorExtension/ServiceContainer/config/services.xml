@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="bex.magento2_restapi_connector.config" class="Bex\Behat\Magento2RestapiConnectorExtension\ServiceContainer\Config" />
+
+        <service id="bex.magento2_restapi_connector.rest_api_service" class="Bex\Behat\Magento2RestapiConnectorExtension\Service\RestApi" />
+
+        <!-- event listener -->
+        <service id="bex.magento2_restapi_connector.rest_api_connect_listener" class="Bex\Behat\Magento2RestapiConnectorExtension\Listener\RestApiConnectListener" public="false">
+            <tag name="event_dispatcher.subscriber" />
+            <argument type="service" id="bex.magento2_restapi_connector.config" />
+        </service>
+    </services>
+</container>

@@ -1,10 +1,10 @@
 <?php
 
-namespace Bex\Behat\Magento2RestapiConnector\Listener;
+namespace Bex\Behat\Magento2RestapiConnectorExtension\Listener;
 
 use Behat\Testwork\EventDispatcher\Event\SuiteTested;
-use Bex\Behat\BrowserInitialiserExtension\ServiceContainer\Config;
-use Bex\Behat\Magento2RestapiConnector\Service\RestApi;
+use Bex\Behat\Magento2RestapiConnectorExtension\ServiceContainer\Config;
+use Bex\Behat\Magento2RestapiConnectorExtension\Service\RestApi;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 final class RestApiConnectListener implements EventSubscriberInterface

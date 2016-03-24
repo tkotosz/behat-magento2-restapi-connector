@@ -1,6 +1,6 @@
 <?php
 
-namespace Bex\Behat\Magento2RestapiConnector\ServiceContainer;
+namespace Bex\Behat\Magento2RestapiConnectorExtension\ServiceContainer;
 
 class Config
 {

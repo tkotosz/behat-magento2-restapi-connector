@@ -1,8 +1,8 @@
 <?php
 
-namespace Bex\Behat\Magento2RestapiConnector\Api;
+namespace Bex\Behat\Magento2RestapiConnectorExtension\Api;
 
-use Bex\Behat\Magento2RestapiConnector\Service\RestApi;
+use Bex\Behat\Magento2RestapiConnectorExtension\Service\RestApi;
 
 class ProductProvider
 {

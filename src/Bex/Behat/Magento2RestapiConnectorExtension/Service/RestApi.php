@@ -1,6 +1,6 @@
 <?php
 
-namespace Bex\Behat\Magento2RestapiConnector\Service;
+namespace Bex\Behat\Magento2RestapiConnectorExtension\Service;
 
 class RestApi
 {
@@ -9,7 +9,7 @@ class RestApi
     /**
      * @var RestApi
      */
-    private $instance;
+    private static $instance;
 
     /**
      * @var string
@@ -28,13 +28,13 @@ class RestApi
     {
     }
 
-    public function getInstance()
+    public static function getInstance()
     {
-        if (!$this->instance) {
-            $this->instance = new self();
+        if (!self::$instance) {
+            self::$instance = new self();
         }
 
-        return $this->instance;
+        return self::$instance;
     }
 
     /**
